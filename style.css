@@ -61,8 +61,6 @@ header input{
 
 .task ul li{
     padding-left: 10px;
-    display: flex;
-    justify-content: space-between;
     list-style: none;
     height: 35px;
     opacity:0.6;
@@ -77,9 +75,8 @@ header input{
 }
 .task ul li button{
     text-decoration: none;
-    position: relative;
-    padding: 5px;
     font-size:15px;
+    padding: 10px;
     font-weight: 600;
     line-height: 20px;
     border:rgba(71, 87, 102,0) 1px solid;
@@ -89,7 +86,10 @@ header input{
     -webkit-background-clip: text;
     transition: 0.3s linear;
 }
+input{
+    color: white;
 
+}
 .task ul li:hover{
     height: 38px;
     width: 525px;
