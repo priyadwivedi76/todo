@@ -3,9 +3,9 @@ let btn1=document.querySelector(".add");
 let ul=document.querySelector("ul");
 let editbtn=document.querySelector(".edit");
 let delbtn=document.querySelector(".delete");
-let li=document.querySelector("li");
+let li=document.querySelectorAll("li");
 
-
+//function to add task in list
 btn1.addEventListener("click",function(){
     console.log(inp.value);
     let itemlist=document.createElement("li");
@@ -21,6 +21,19 @@ btn1.addEventListener("click",function(){
     
     let delbutton=document.createElement("button");
     delbutton.classList.add("delete");
-    delbutton.innerText="delete";
+    delbutton.innerText="Delete";
     itemlist.appendChild(delbutton);
 });
+
+//function to delete task
+ul.addEventListener("click",function(event){
+    if(event.target.nodeName=="BUTTON"){
+        if(event.target.innerText=="Delete"){
+            let par=event.target.parentElement;
+            par.remove();
+        }
+        else {
+            let par=event.target.parentElement;
+        }
+    };
+})
