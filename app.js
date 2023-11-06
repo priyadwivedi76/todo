@@ -12,11 +12,6 @@ btn1.addEventListener("click",function(){
     itemlist.classList.add("item");
     ul.appendChild(itemlist);
     inp.value="";
-
-    // let editbutton=document.createElement("button");
-    // editbutton.classList.add("edit");
-    // editbutton.innerText="Edit";
-    // itemlist.appendChild(editbutton);
     
     let delbutton=document.createElement("button");
     delbutton.classList.add("delete");
